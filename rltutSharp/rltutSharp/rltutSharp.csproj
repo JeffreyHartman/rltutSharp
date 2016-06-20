@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AsciiPanelSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External\AsciiPanelSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,10 +79,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AsciiPanelSharp\AsciiPanelSharp\AsciiPanelSharp\AsciiPanelSharp.csproj">
-      <Project>{feba0c12-c40c-4117-a949-fc1b1b99203a}</Project>
-      <Name>AsciiPanelSharp</Name>
-    </ProjectReference>
+    <Content Include="External\AsciiPanelSharp.dll" />
+    <Content Include="External\AsciiPanelSharp.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
